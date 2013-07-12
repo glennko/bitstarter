@@ -3,7 +3,7 @@ var fs = require('fs');
 var input;
 
 var app = express.createServer(express.logger());
-fs.readFileSync('./index.html', input) 
+input = fs.readFileSync('./index.html') 
 
 app.get('/', function(request, response) {
 //  response.send('Hello World 2!');
